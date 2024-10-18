@@ -1,0 +1,194 @@
+/* Reset gaya default browser */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Gaya dasar */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background: linear-gradient(to right, #8360c3, #2ebf91);
+    color: #fff;
+    text-align: center;
+}
+
+/* Gaya untuk header */
+header {
+    background: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    padding: 10px 0; /* Kurangi padding untuk mengecilkan navbar */
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    font-size: 1.8em; /* Kurangi ukuran font judul */
+    margin-bottom: 5px; /* Kurangi margin bawah */
+}
+
+/* Gaya untuk navigasi */
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 10px; /* Kurangi jarak antar item */
+}
+
+nav ul li {
+    margin: 0;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 5px 10px; /* Kurangi padding untuk mengecilkan tombol */
+    border-radius: 5px;
+    transition: background 0.3s ease;
+    font-size: 0.9em; /* Kurangi ukuran font */
+}
+
+nav ul li a:hover {
+    background: #2ebf91;
+}
+
+
+/* Gaya untuk bagian kontainer */
+.container {
+    width: 80%;
+    margin: 30px auto;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+}
+
+.container:hover {
+    transform: scale(1.02);
+}
+
+/* Gaya untuk section */
+section {
+    margin-bottom: 40px;
+}
+
+section h2 {
+    font-size: 2em;
+    margin-bottom: 15px;
+    color: #ffd700;
+}
+
+/* Gaya untuk daftar keahlian */
+ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    text-align: left;
+    color: #ddd;
+}
+
+/* Gaya untuk proyek */
+.project {
+    margin-bottom: 25px;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 15px;
+    border-radius: 8px;
+    transition: background 0.3s ease;
+}
+
+.project:hover {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.project h3 {
+    margin-bottom: 8px;
+    color: #ffd700;
+}
+
+/* Gaya untuk foto profil */
+.profile-photo {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto 20px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+    border: 4px solid #fff;
+}
+
+/* Gaya untuk footer */
+footer {
+    background: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 40px;
+    font-size: 0.9em;
+}
+
+/* Animasi untuk transisi */
+a, .project, .container {
+    transition: all 0.3s ease-in-out;
+}
+/* Gaya untuk tombol audio */
+.audio-button {
+    background: #ffd700;
+    color: #333;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1em;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.3s ease;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    position: fixed; /* Atur posisi tetap */
+    bottom: 20px;    /* Jarak dari bawah */
+    left: 20px;      /* Jarak dari kiri */
+    z-index: 1000;   /* Agar muncul di atas elemen lain */
+}
+
+.audio-button:hover {
+    background: #ffbf00;
+    transform: translateY(-3px);
+}
+
+.audio-button:active {
+    transform: translateY(1px);
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+}
+
+#myAudio {
+    display: none;
+}
+/* Gaya untuk gambar proyek */
+.project-image {
+    width: 50%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+/* Efek hover untuk gambar proyek */
+.project-image:hover {
+    transform: scale(1.05);
+}
+
+/* Atur ulang gaya proyek */
+.project {
+    margin-bottom: 25px;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 15px;
+    border-radius: 8px;
+    transition: background 0.3s ease;
+}
+
+.project:hover {
+    background: rgba(255, 255, 255, 0.2);
+}

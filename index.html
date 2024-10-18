@@ -1,11 +1,85 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Portofolio M Aditya Pradana</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <p>afakjdhfkakdfakgdfkah</p>
+    <header>
+        <div class="container">
+            <h1>Portofolio M Aditya Pradana</h1>
+            <nav>
+                <ul>
+                    <li><a href="#about">Tentang Saya</a></li>
+                    <li><a href="#skills">Keahlian</a></li>
+                    <li><a href="#projects">Proyek</a></li>
+                    <li><a href="#contact">Kontak</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="about" class="container">
+        <h2>Tentang Saya</h2>
+        <img src="pp.jpeg" alt="Foto Profil" class="profile-photo">
+        <p>Perkenalkan Nama Saya M Aditya Pradana ,Saya adalah seorang junior web dev dan game dev junior. Saya memiliki passion yang kuat terhadap teknologi dan selalu berusaha untuk belajar hal-hal baru.</p>
+    </section>
+
+    <section id="skills" class="container">
+        <h2>Keahlian</h2>
+        <ul>
+            <li>HTML & CSS</li>
+            <li>JavaScript</li>
+            <li>Laravel</li>
+            <li>Bootstap</li>
+            <li>Construct 3</li>
+        </ul>
+    </section>
+
+    <section id="projects" class="container">
+        <h2>Proyek</h2>
+        <div class="project">
+            <img src="game.jpeg" alt="Proyek Game" class="project-image">
+            <h3>Proyek Game</h3>
+            <p>Proyek game yang saya buat untuk projek akhir mata kuliah pemograman game, Sebuah game yang bertema mini puzzle yang menceritakan seorang anak yang kembali kerumah setelah 3 tahun merantau, game ini dibuat dengan menggunakan Construct 3.</p>
+        </div>
+        <div class="project">
+            <img src="absensi.jpeg" alt="Proyek Website absensi guru"  class="project-image">
+            <h3>Proyek Website Absensi Guru SD</h3>
+            <p>Proyek Website Untuk Proyek Penelitian.</p>
+        </div>
+    </section>
+    
+
+    <section id="contact" class="container">
+        <h2>Kontak</h2>
+        <p>Email: <a href="mailto:email@example.com">aditcihuy@gmail.com</a></p>
+        <p>Telepon: +62 123 456 789</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Portofolio Saya. Dibuat dengan gaya dan hati ❤️</p>
+    </footer>
+
+    <audio id="myAudio" src="Aura.mp3" loop></audio>
+<button id="audioButton" class="audio-button">Play Audio</button>
+
+<script>
+    const audio = document.getElementById('myAudio');
+    const button = document.getElementById('audioButton');
+
+    button.addEventListener('click', () => {
+        if (audio.paused) {
+            audio.play();
+            button.textContent = 'Pause Audio';
+        } else {
+            audio.pause();
+            button.textContent = 'Play Audio';
+        }
+    });
+</script>       
+
 </body>
 </html>
